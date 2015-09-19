@@ -3,7 +3,7 @@
   hosts: all
   connection: local
   sudo: yes
-  
+
   roles:
   - role: nvm
     nvm:
