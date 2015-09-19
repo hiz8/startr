@@ -1,0 +1,20 @@
+---
+- name: install the latest version of git 
+  yum: name=git state=latest
+
+- name: create nvm directoryc
+  file: dest={{nvm_install_dir}} state=directory
+  tags: nvm
+
+- name: install nvm
+  git: repo=https://github.com/creationix/nvm.git dest={{nvm_install_dir}} accept_hostkey=yes
+
+- name: set profile
+  template: src=nvm.sh.j2 dest=/etc/profile.d/nvm.sh
+  tags: nvm
+  
+- name: install {{nvm_node_version}}
+  shell: source /etc/profile && nvm install {{nvm_node_version}} &&  nvm alias default {{nvm_node_version}}
+  register: nvm_install_result
+  changed_when: "'is already installed.' not in nvm_install_result.stdout"
+  tags: nvm

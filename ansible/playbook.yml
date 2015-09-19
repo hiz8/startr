@@ -1,0 +1,12 @@
+---
+- name: Test playbook for nvm role
+  hosts: all
+  connection: local
+  sudo: yes
+  
+  roles:
+  - role: nvm
+    nvm:
+      version: v0.26.1
+      node_version: '4.1'
+      user: vagrant
