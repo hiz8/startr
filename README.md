@@ -3,7 +3,7 @@
 Startr
 ======
 
-Set up local development environment base on Vagrant, Ansible, Node.js, Gulp.
+Set up local development environment base on Vagrant, Ansible, Node.js.
 
 ## Quick start
 
