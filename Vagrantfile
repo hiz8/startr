@@ -5,6 +5,6 @@ Vagrant.configure(2) do |config|
     config.vm.provision "shell", :path => "provision.sh"
     config.vm.synced_folder ".", "/vagrant", :mount_options => ['dmode=775', 'fmode=664']
     config.vm.provider "virtualbox" do |vb|
-        vb.memory = "2048"
+        vb.customize ['modifyvm', :id, "--memory", "2048", "--paravirtprovider", "kvm"]
     end
 end
