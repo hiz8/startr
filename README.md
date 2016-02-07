@@ -15,11 +15,11 @@ $ vagrant up
 
 ## Development environment
 
-- CentOS (6.8 x86_64)
+- CentOS (7 x86_64)
 - Ansible (latest)
 - Git (latest)
-- nvm (0.26.1)
-- Node.js (4.1)
+- nvm (0.30.2)
+- Node.js (5.5)
 
 ## License
 
