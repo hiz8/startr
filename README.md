@@ -5,6 +5,13 @@ Startr
 
 Set up local development environment base on Vagrant, Ansible, Node.js.
 
+
+## Versioning
+
+- CentOS 7 (master branch)
+- CentOS 6 (CentOS_6 branch)
+
+
 ## Quick start
 
 You can run the playbooks with Vagrant.
@@ -13,6 +20,7 @@ You can run the playbooks with Vagrant.
 $ vagrant up
 ```
 
+
 ## Development environment
 
 - CentOS (7 x86_64)
@@ -20,6 +28,7 @@ $ vagrant up
 - Git (latest)
 - nvm (0.30.2)
 - Node.js (5.5)
+
 
 ## License
 
