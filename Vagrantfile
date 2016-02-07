@@ -9,4 +9,6 @@ Vagrant.configure(2) do |config|
     config.vm.provider "virtualbox" do |vb|
         vb.customize ['modifyvm', :id, "--memory", "2048", "--paravirtprovider", "kvm"]
     end
+    config.ssh.forward_agent = true
+    config.ssh.insert_key = false
 end
