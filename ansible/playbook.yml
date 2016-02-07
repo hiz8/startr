@@ -7,6 +7,6 @@
   roles:
   - role: nvm
     nvm:
-      version: v0.26.1
-      node_version: '4.1'
+      version: v0.30.2
+      node_version: '5.5'
       user: vagrant
