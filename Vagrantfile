@@ -1,5 +1,6 @@
 Vagrant.configure(2) do |config|
-    config.vm.box = "centos64"
+    config.vm.box = "centos6/64"
+    config.vm.box_url = "http://sourceforge.net/projects/nrel-vagrant-boxes/files/CentOS-6.6-x86_64-v20150426.box"
 
     config.vm.network "private_network", ip: "192.168.33.10"
     config.vm.network :forwarded_port, host: 3000, guest: 3000
