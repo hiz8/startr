@@ -26,8 +26,8 @@ $ vagrant up
 - CentOS (7 x86_64)
 - Ansible (latest)
 - Git (latest)
-- nvm (0.30.2)
-- Node.js (5.5)
+- nvm (0.31)
+- Node.js (5.8)
 
 
 ## License
