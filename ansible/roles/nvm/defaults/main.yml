@@ -1,4 +1,4 @@
 ---
-nvm_version: v0.30.2
+nvm_version: v0.31
 nvm_install_dir: /opt/nvm
-nvm_node_version: "5.5"
+nvm_node_version: "5.8"
