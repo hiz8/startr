@@ -5,9 +5,5 @@
   become: yes
 
   roles:
-  - role: nvm
-    nvm:
-      version: v0.33
-      node_version: '8.11.3'
-  - role: npm-modules
-    node_version: '8.11.3'
+  - nvm
+  - npm-modules
